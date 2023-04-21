@@ -23,7 +23,7 @@ jobs:
         images: lumacollins98/github-actions-repo
    
     - name: Build and Push Docker Image
-      uses: docker/metadata-action@v4.4.0
+      uses: docker/setup-buildx-action@v2.5.0
       with: 
         context: .
         push: true
