@@ -20,7 +20,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v4.4.0
       with:
-        images: lumacollins9/github-actions-repo
+        images: lumacollins98/github-actions-repo
    
     - name: Build and Push Docker Image
       uses: docker/metadata-action@v4.4.0
