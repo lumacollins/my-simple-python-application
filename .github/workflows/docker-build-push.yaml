@@ -16,7 +16,7 @@ jobs:
          username: ${{ secrets.DOCKER_USERNAME }}
          password:  ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Extract Metadata (tags, lables) for docker
+    - name: Extract Metadata (tags, labels) for docker
       id: meta
       uses: docker/metadata-action@v4.4.0
       with:
@@ -28,7 +28,7 @@ jobs:
         context: .
         push: true
         tags: ${{ steps.meta.outputs.tags }}
-        lables: ${{ steps.meta.outputs.lables }}
+        lables: ${{ steps.meta.outputs.labels }}
         
           
       
